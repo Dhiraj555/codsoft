@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Mahalaxmi</title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+  *{
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: .2s linear;
+  }
+  
+  html{
+      font-size: 50.5%;
+  }
+  section{
+      padding: 2rem 9%;
+  }
+  
+  /* Header */
+  
+  .header {
+      position: absolute;
+      top: 0;
+      left:0;
+      right: 50rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 9%;
+      z-index: 2;
+      background: #000;
+  }
+  
+  .header  .logo img{
+      height: 10rem;
+  }
+  
+  .header .navbar #close{
+      display: none;
+  }
+  
+  .header .navbar a {
+      font-size: 2rem;
+      margin-right: 2rem;
+      color:#fff;
+  }
+  .header .navbar a:hover{
+      color: #e70a0a;
+  }
+  .header #menu {
+      display: none;
+  }
+  
+  /*-----Home ---*/
+  .home{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+  }
+  .home .content{
+      flex: 1 1 40rem;
+      padding-top: 6.5%;
+  }
+  .home .content .title{
+      font-size:  6rem;
+      color: #fff;
+      text-transform: uppercase;
+  }
+  
+  .home .content .title span{
+      text-transform: uppercase;
+      color: #e40707;
+  }
+  .home .content .description{
+      font-size: 2rem;
+      font-weight: lighter;
+      line-height: 1.8;
+      padding: 1rem 0;
+      color: #fff;
+  }
+  .home .content .btn{
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 2rem 3rem;
+      font-size: 1.7rem;
+      color: #fff;
+      background: rgb(116, 116, 134);
+      border: 2px solid #fff;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 5px;
+  
+  }
+  
+  
+  home .content .btn:hover{
+      letter-spacing: .5rem;
+  }
+  .home .image{
+      flex: 1 1 40rem;
+  }
+  .home .image img{
+      width: 100%;
+  }
+  
+  /* Footer */
+  
+  .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 2rem;
+  }
+  .social-icons{
+      margin-top: 50px;
+  }
+  .social-icons i{
+      font-size: 22px;
+      margin: 15px;
+      cursor: pointer;
+  }
+    </style>
+</head>
+<body>
+    <!---- Header Section----->
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="image/PicsArt_05-17-05.53.44.jpg" alt="logo">
+        </a>
+
+        <nav class="navbar">
+            <div id="close" calss="fas fa-times"></div>
+
+            <a href="#" class="nav_item">Home</a>
+            <a href="#" class="nav_item">About</a>
+            <a href="#" class="nav_item">Menu</a>
+            <a href="#" class="nav_item">contact</a>
+        </nav> 
+
+        <div id="menu" class="fas fa-bars"></div>
+    </header>
+
+    <!-----Home section-->
+    <section class="home">
+        <div class="content">
+            <h1 class="title">Your one-stop <span>Shop</span> all things <span>mobile.</span></h1>
+            <p class="description">All kinds of mobile available and Repair here.</p>
+            <a href="#" class="btn">get started</a>
+        </div>
+        <div class="image">
+            <img src="image/Mahalaxmi.png" alt="" class="move">
+        </div>
+        
+    </section>
+
+    <!---Footer-->
+    <div class="footer">
+        <div class="social-icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+
+        <p>&copy; 2023 Your Company. All rights reserved.</p>            
+    </div>
+       
+</body>
+</html>
